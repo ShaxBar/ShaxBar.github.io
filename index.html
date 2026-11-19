@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Александр — Full-stack разработчик</title>
+  <meta name="description" content="Александр — full-stack разработчик. Лендинги и веб-приложения: вёрстка, бэкенд, деплой.">
+  <meta property="og:title" content="Александр — Full-stack разработчик">
+  <meta property="og:description" content="Лендинги и веб-приложения: от вёрстки до бэкенда и деплоя.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://shaxbar.github.io/img/preview.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0a0a0f',
+            neon: '#22d3ee',
+            violet: '#a78bfa',
+          },
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glow { text-shadow: 0 0 30px rgba(34, 211, 238, .45); }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px -15px rgba(34,211,238,.25); }
+    .grid-bg {
+      background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+  </style>
+</head>
+<body class="bg-ink text-slate-200 antialiased">
+
+  <!-- Навигация -->
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink/70 border-b border-white/5">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-mono text-neon font-bold">&lt;AS /&gt;</a>
+      <div class="hidden md:flex gap-8 text-sm text-slate-400">
+        <a href="#about" class="hover:text-neon transition">Обо мне</a>
+        <a href="#projects" class="hover:text-neon transition">Проекты</a>
+        <a href="#contacts" class="hover:text-neon transition">Контакты</a>
+      </div>
+      <a href="#contacts" class="text-sm border border-neon/40 text-neon px-4 py-2 rounded-lg hover:bg-neon hover:text-ink transition">Написать</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="grid-bg min-h-screen flex items-center pt-16">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <p class="font-mono text-neon mb-4">$ whoami</p>
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+        Александр<br>
+        <span class="glow text-transparent bg-clip-text bg-gradient-to-r from-neon to-violet">Full-stack разработчик</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-lg text-slate-400">
+        Делаю лендинги и веб-приложения под ключ: вёрстка, бэкенд, деплой.
+        Слежу за типографикой и довожу детали до конца.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#projects" class="bg-neon text-ink font-semibold px-6 py-3 rounded-lg hover:brightness-110 transition">Смотреть проекты</a>
+        <a href="#contacts" class="border border-white/15 px-6 py-3 rounded-lg hover:border-neon hover:text-neon transition">Связаться</a>
+      </div>
+      <div class="mt-14 flex flex-wrap gap-x-10 gap-y-3 font-mono text-sm text-slate-500">
+        <span>HTML / CSS / JS</span>
+        <span>Tailwind CSS</span>
+        <span>Node.js / Python</span>
+        <span>SQL</span>
+        <span>REST API</span>
+        <span>Figma → код</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Обо мне -->
+  <section id="about" class="border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-mono text-neon text-sm mb-3">// обо мне</h2>
+        <h3 class="text-3xl md:text-4xl font-bold">Код, который продаёт</h3>
+        <p class="mt-5 text-slate-400 leading-relaxed">
+          Специализируюсь на лендингах и промо-страницах, но могу взять
+          проект целиком — от макета до бэкенда и деплоя на сервер.
+          Каждый проект внизу — полностью свёрстанная мной работа.
+        </p>
+      </div>
+      <div class="grid grid-cols-4 gap-3">
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="HTML5">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="w-8 h-8" data-f="H5" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">HTML</span>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="CSS3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" class="w-8 h-8" data-f="C3" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">CSS</span>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="JavaScript">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8" data-f="JS" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">JavaScript</span>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="Tailwind CSS">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="w-8 h-8" data-f="Tw" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">Tailwind</span>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="Node.js">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-8 h-8" data-f="Nd" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">Node.js</span>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="Python">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-8 h-8" data-f="Py" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">Python</span>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="PostgreSQL">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-8 h-8" data-f="PG" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">PostgreSQL</span>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 flex flex-col items-center gap-2 hover:border-neon/40 hover:bg-white/5 transition" title="Git">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="w-8 h-8" data-f="Git" onerror="iconFallback(this)">
+          <span class="text-xs text-slate-500">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Проекты -->
+  <section id="projects" class="border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <h2 class="font-mono text-neon text-sm mb-3">// проекты</h2>
+      <h3 class="text-3xl md:text-4xl font-bold mb-12">Избранные лендинги</h3>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- SaaS -->
+        <a href="./saas/" class="card block rounded-2xl border border-white/10 bg-gradient-to-b from-indigo-950/40 to-transparent p-8 transition duration-300">
+          <div class="relative h-40 rounded-xl overflow-hidden bg-gradient-to-br from-indigo-500 via-violet-500 to-fuchsia-500 opacity-80 mb-6">
+            <img src="./img/saas.webp" alt="FlowBoard" class="absolute inset-0 w-full h-full object-cover object-top" onerror="this.remove()">
+          </div>
+          <p class="font-mono text-xs text-neon mb-2">SaaS / B2B</p>
+          <h4 class="text-xl font-bold">FlowBoard</h4>
+          <p class="text-slate-400 text-sm mt-2">Продающий лендинг сервиса аналитики задач: hero, фичи, тарифы, CTA.</p>
+          <p class="mt-4 text-sm text-neon">Открыть →</p>
+        </a>
+
+        <!-- Кофейня -->
+        <a href="./coffee/" class="card block rounded-2xl border border-white/10 bg-gradient-to-b from-amber-950/40 to-transparent p-8 transition duration-300">
+          <div class="relative h-40 rounded-xl overflow-hidden bg-gradient-to-br from-amber-600 via-orange-700 to-stone-800 opacity-80 mb-6">
+            <img src="./img/coffee.webp" alt="Кофейня «Утро»" class="absolute inset-0 w-full h-full object-cover object-top" onerror="this.remove()">
+          </div>
+          <p class="font-mono text-xs text-neon mb-2">Локальный бизнес</p>
+          <h4 class="text-xl font-bold">Кофейня «Утро»</h4>
+          <p class="text-slate-400 text-sm mt-2">Тёплый лендинг кофейни: меню, атмосфера, бронирование столика.</p>
+          <p class="mt-4 text-sm text-neon">Открыть →</p>
+        </a>
+
+        <!-- Курс -->
+        <a href="./course/" class="card block rounded-2xl border border-white/10 bg-gradient-to-b from-orange-950/40 to-transparent p-8 transition duration-300">
+          <div class="relative h-40 rounded-xl overflow-hidden bg-gradient-to-br from-orange-500 via-rose-500 to-purple-600 opacity-80 mb-6">
+            <img src="./img/course.webp" alt="Python за 8 недель" class="absolute inset-0 w-full h-full object-cover object-top" onerror="this.remove()">
+          </div>
+          <p class="font-mono text-xs text-neon mb-2">EdTech</p>
+          <h4 class="text-xl font-bold">Python за 8 недель</h4>
+          <p class="text-slate-400 text-sm mt-2">Лендинг онлайн-курса: программа, отзывы, форма записи.</p>
+          <p class="mt-4 text-sm text-neon">Открыть →</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts" class="border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-24 text-center">
+      <h2 class="font-mono text-neon text-sm mb-3">// контакты</h2>
+      <h3 class="text-3xl md:text-5xl font-bold">Есть задача? <span class="text-neon glow">Давайте обсудим</span></h3>
+      <p class="mt-5 text-slate-400 max-w-lg mx-auto">Открыт к заказам на лендинги, промо-страницы и вёрстку по макету.</p>
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="mailto:mr.shaxa86alexander@yandex.ru" class="bg-neon text-ink font-semibold px-6 py-3 rounded-lg hover:brightness-110 transition">mr.shaxa86alexander@yandex.ru</a>
+        <a href="https://t.me/shax_bar" target="_blank" rel="noopener" class="border border-white/15 px-6 py-3 rounded-lg hover:border-neon hover:text-neon transition">Telegram</a>
+        <a href="https://github.com/ShaxBar" target="_blank" rel="noopener" class="border border-white/15 px-6 py-3 rounded-lg hover:border-neon hover:text-neon transition">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/5 py-8 text-center text-sm text-slate-600 font-mono">
+    © 2026 Александр · сделано руками, без конструкторов
+  </footer>
+
+  <script>
+    function iconFallback(img) {
+      img.outerHTML = `<span class="font-mono text-lg font-bold text-neon">${img.dataset.f}</span>`;
+    }
+  </script>
+</body>
+</html>
